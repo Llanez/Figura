@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<style>
+  .ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+    <title>Lukars</title>
+  </head>
+  <body style="background-color:#756F91">
+<div class="container-fluid">
+<img class="col-lg-12" src="bk.gif" alt="Girl in a jacket">
+</div>
+<div class="container">
+  <h1 class="p-4 text-light" >Luis Carlos Llanez | </h1>
+    <h1 class="ml7">
+      <span class="text-wrapper">
+        <span class="letters">Lukars</span>
+      </span>
+    </h1>
+	<div class="container-fluid">
+<div class="row">
+<div class="col-lg-2 text-light font-weight-bold mt-2" style="text-align: center; background-color:#ac14ec"><br>P</div>
+<div class="col-lg-2 text-light font-weight-bold mt-2" style="text-align: center; background-color:#1484ec"><br>R</div>
+<div class="col-lg-2 text-light font-weight-bold mt-2" style="text-align: center; background-color:#03be13"><br>I</div>
+<div class="col-lg-2 text-light font-weight-bold mt-2" style="text-align: center; background-color:#eccc14"><br>D</div>
+<div class="col-lg-2 text-light font-weight-bold mt-2" style="text-align: center; background-color:#ec9614"><br>E</div>
+<div class="col-lg-2 text-light font-weight-bold mt-2" style="text-align: center; background-color:#ec1414"><br>♡</div>
+<div class="col-lg-2 text-light font-weight-bold " style="text-align: center; background-color:#ac14ec"><br></div>
+<div class="col-lg-2 text-light font-weight-bold " style="text-align: center; background-color:#1484ec"><br></div>
+<div class="col-lg-2 text-light font-weight-bold " style="text-align: center; background-color:#03be13"><br></div>
+<div class="col-lg-2 text-light font-weight-bold " style="text-align: center; background-color:#eccc14"><br></div>
+<div class="col-lg-2 text-light font-weight-bold " style="text-align: center; background-color:#ec9614"><br></div>
+<div class="col-lg-2 text-light font-weight-bold " style="text-align: center; background-color:#ec1414"><br></div>
+
+<div class="col-lg-12 text-light font-weight-bold mt-3" style="background-color:#a56e9c; text-align:unset">Me gusta:</div>
+<div class="col-lg-10 text-light font-weight-bold mt-3" style="background-color:#a56e9c; text-align:center"> el Cafe</div>
+<div class="col-lg-2 mt-3"><a href="https://tobiasahlin.com/moving-letters/" target="_blank"><img  src="coffee.gif" width="200"></a></div>
+<img class="col-lg-2 mt-3" src="taco.gif">
+<div class="col-lg-10 text-light font-weight-bold mt-3" style="background-color:#a56e9c; text-align:center"> los Tacos</div>
+<a href="figura.html" type="button" target="_blank" style="text-decoration:none; width: 1200px; height:50px;" class="text-center bg-warning">FIGURA</a>
+</div>
+
+<div class="col-lg-12">
+ 
+
+
+</div>
+</div> 
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      // Wrap every letter in a span
+  var textWrapper = document.querySelector('.ml7 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml7 .letter',
+      translateY: ["1.1em", 0],
+      translateX: ["0.55em", 0],
+      translateZ: 0,
+      rotateZ: [180, 0],
+      duration: 750,
+      easing: "easeOutExpo",
+      delay: (el, i) => 50 * i
+    }).add({
+      targets: '.ml7',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
